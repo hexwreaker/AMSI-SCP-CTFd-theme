@@ -1,0 +1,230 @@
+
+* {
+    caret-color: #1b1206 !important;
+}
+
+html {
+    background-color: #aaa;
+}
+
+body {
+    background-color: #aaa;
+}
+
+
+main {
+    margin-top: 10vh;
+    padding-top: 0px !important;
+    min-height: 110vh;
+}
+
+
+
+.jumbotron {
+    background: linear-gradient(rgba(255, 0, 0, 0.05), #aaa), url('/themes/CTFd-AMSI-SCP-theme/static/img/brutalist_wallpaper_large.webp');
+    /*background-color:#343a40;*/
+    color:#000;
+}
+
+.jumbotron h1 {
+    font-weight: bold;
+}
+
+select.form-control {
+    height:auto!important
+}
+
+.custom-select {
+    background:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px!important
+}
+
+.card {
+    border-radius: 0 !important
+}
+
+#score-graph {
+    min-height:400px;
+    display:block;
+    clear:both;
+}
+
+#solves-graph {
+    display:block;
+    height:350px
+}
+
+#categories-pie-graph,#keys-pie-graph {
+    min-height:400px;
+    display:block
+}
+
+.form-control, .form-control:focus, input-filled-valid {
+    position:relative;
+    display:block;
+    padding:.8em!important;   
+    border-radius:0;
+    background:#e1e1e1;
+    color:#434343 !important;
+    font-weight: bold;
+    font-family: Avenir Next,Helvetica Neue,Helvetica,Arial,sans-serif;
+    height:auto!important;
+    border-left: 5px solid !important;
+    border-right: 5px solid !important;
+    border-top: 1px solid !important;
+    border-bottom: 1px solid !important;
+    border-color: #649d86 !important;
+    /* box-shadow: 0 0 0 .2rem #649d86 !important; */
+}
+
+.form-control:focus, input-filled-valid:focus {
+    background:#f0f0f0;
+    font-weight: bold;
+    color:#000000 !important;
+    border-left: 5px solid !important;
+    border-right: 5px solid !important;
+    border-top: 1px solid !important;
+    border-bottom: 1px solid !important;
+    border-color: #85cfb1 !important;
+    /* box-shadow: 0 0 2px 4px #649d86 !important; */
+    outline: 0px;
+}
+
+
+.challenge-desc {
+    overflow-wrap:anywhere
+}
+
+.challenge-desc img {
+    max-width:100%
+}
+
+.navbar {
+    position:fixed !important;
+    font-size: large !important;
+    padding: 1.2vh !important;
+    display: block !important;
+    background-color: #191616 !important;
+    min-height: 10vh;
+}
+
+.navbar-brand {
+    padding: 0px !important;
+    margin-right: 10%;
+}
+
+.navbar-brand div {
+    display: block;
+    background: url("/themes/CTFd-AMSI-SCP-theme/static/img/AMSIlogo_nb.png") no-repeat;
+    width: 7vh;
+    height: 7vh;
+    background-size: contain;
+}
+
+.navbar-brand:hover div {
+    background: url("/themes/CTFd-AMSI-SCP-theme/static/img/AMSIlogo.png") no-repeat;
+    width: 7vh;
+    height: 7vh;
+    background-size: contain;
+}
+
+.navbar-brand-scp {
+    margin-left: 10%;
+
+    mask-image: url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg');
+    mask-size: cover;
+    mask-position: center;
+}
+
+.navbar-brand-scp div {
+    display: block;
+    background-color: rgb(200, 200, 200);
+
+    width: 7vh;
+    height: 7vh;
+    background-size: 7vh 7vh;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand-scp:hover div {
+    background-color: #ffffff;
+}
+
+.navbar .container {
+    margin: auto;
+}
+
+.nav-item {
+    margin-left: 5px;
+}
+
+#base-navbars {
+    text-align: center;
+}
+
+
+
+.category-header h3 {
+    border-bottom: 2px solid #7c7171;
+}
+
+.challenges-row {
+    vertical-align: top;
+}
+
+.d-inline-block {
+    border-left: 5px solid #85cfb1 !important;
+    border-right: 5px solid #68a28b !important;
+    border-top: 1px solid #96e9c8 !important;
+    border-bottom: 1px solid #517d6c !important;
+    box-sizing: border-box;
+    transition: border-bottom 0.2s ease-in;
+
+    padding: 0px !important;
+    margin: 0px 15px 0px 0px !important;
+}
+
+.d-inline-block:focus {
+    border-bottom: 3px solid #517d6c !important;
+}
+
+
+.challenge-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+
+    padding: 3px !important;
+    margin: 0px !important;
+    box-shadow: none !important;
+}
+
+.challenge-button > p {
+    margin: 0px 50px 0px 5px !important;
+    margin-right: 50px !important;
+    text-shadow:  black -1px 0px 0px;
+}
+
+.challenge-button > span {
+    margin-top: 3%;
+    margin-right: 3%;
+    position: absolute !important;
+    top: 0px;
+    right: 0px;
+    font-weight: bold !important;
+    text-shadow:  black 0px -1px 0px, black 0px 1px 0px, black -1px 0px 0px, black 1px 0px 0px;
+    
+}
+
+.corner-button-check {
+    position: absolute!important;
+    bottom: 0px!important;
+    right: 0px!important;
+    width: 30px!important;
+    height: 30px!important;
+    margin: 0px 3% 3% 0px !important;
+
+    mask-image: url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg');
+    background: linear-gradient(#8000ff, #ff0000), url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg')!important;
+    background-size: cover!important;
+}
