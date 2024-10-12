@@ -15,6 +15,16 @@ h1, h2 {
     color: #acacac !important;
 }
 
+.amsi-img-banner {
+    margin: 8vh auto;
+    display: block;
+}
+
+.fa-linkdin {
+    width: 8vw;
+    height: 8vw;
+}
+
 html {
     background-color: #000b13;
 }
@@ -228,25 +238,57 @@ select.form-control {
 }
 
 .challenge-button > span {
-    margin-top: 3%;
+    padding-top: 3%;
     margin-right: 6%;
     position: absolute !important;
     top: 0px;
     right: 0px;
     font-weight: bold !important;
-    
+    height: 93%;
+    /* mask-image: url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg'); */
+    background-position: bottom !important;
+    background-size: 20px !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Difficultés */
+.tag-facile .challenge-button > span {
+    /* background: linear-gradient(#008d3e8f, #00ff648a), url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg'); */
+    background: url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo_green.png');
+}
+.tag-moyen .challenge-button > span {
+    /* background: linear-gradient(#8d86008f, #f6ff008a), url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg'); */
+    background: url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo_orange.png');
+}
+.tag-difficile .challenge-button > span {
+    /* background: linear-gradient(#8d2d008f, #ff51008a), url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg'); */
+    background: url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo_red.png');
 }
 
 .corner-button-check {
     position: absolute!important;
     bottom: 0px!important;
     right: 0px!important;
-    width: 30px!important;
-    height: 30px!important;
-    margin: 0px 3% 3% 0px !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0px 6% 3% 0px !important;
+
+    /* mask-image: url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg'); */
+    background: none;
+    /* background: linear-gradient(#008d3e8f, #00ff648a), url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg')!important; */
+    /* background-size: cover!important; */
+}
+
+.scp-difficulty-marker {
+    position: absolute!important;
+    bottom: 0px!important;
+    right: 0px!important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0px 6% 3% 0px !important;
 
     mask-image: url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg');
-    background: linear-gradient(#008d3e8f, #00ff648a), url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg')!important;
+    /* background: linear-gradient(#008d3e8f, #00ff648a), url('/themes/CTFd-AMSI-SCP-theme/static/img/scp_logo.svg') !important; */
     background-size: cover!important;
 }
 
@@ -256,15 +298,106 @@ select.form-control {
     border: none !important;
 }
 
-/* 
-.btn-dark {
-    color: #fff !important;
-    background-color: #23272b !important;
-    border-color: #1d2124 !important;
+/* Challenge */
+
+#challenge {
+    color: black !important;
 }
 
-.btn-dark:hover {
-    color: #fff;
-    background-color: #343a40 !important;
-    border-color: #343a40 !important;
-} */
+.challenge-name {
+    color: black !important;
+}
+
+.modal-dialog {
+    border-radius: 3px;
+    color: black !important;
+
+}
+
+.challenge-desc {
+    font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+    font-size: 0.94em;
+    border-top: 2px solid #aeaeae;
+    border-bottom: 2px solid #aeaeae;
+    
+    margin: 30px 0px;
+    padding: 10px 14px;
+    display: block;
+}
+
+.challenge-connection-info {
+    padding: 5px 20px;
+    background-color: #212121;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.challenge-connection-info > code {
+    font-size: 87.5% !important;
+    color: #00d366 !important;
+    word-break: break-word !important;
+    text-shadow: 0px 0px 1px black !important;
+}
+
+.challenge-submit {
+    color: #464e56 !important;
+    background-color: #aeaeae !important;
+    border-color: #737373 !important;
+    border-radius: 2px;
+}
+
+.challenge-submit:hover {
+    color: white !important;
+    background-color: #727272 !important;
+    border-color: #404040 !important;
+}
+
+.challenge-submit:focus {
+    color: white !important;
+    background-color: #2b2b2b !important;
+    border-color: #57d188 !important;
+}
+
+#solves * {
+    color: #000 !important;
+}
+
+#challenge-solves-names td, #challenge-solves-names th {
+    padding: .75rem !important;
+    vertical-align: top !important;
+    border-top: 1px solid #51775f !important;
+}
+
+.modal-content {
+    background-color: #b9bbbc !important;
+    border-radius: 2px !important;
+}
+
+.modal-body > .nav-tabs .nav-item > .active {
+    color: #202326 !important;
+    background-color: #aeaeae !important;
+    border-color: #aeaeae !important;
+}
+
+.modal-body > .nav-tabs .nav-item > .nav-link {
+    color: #464e56;
+}
+.modal-body > .nav-tabs .nav-item > .nav-link:hover {
+    border-color: #aeaeae !important;
+    color: #202326 !important;
+} 
+
+.modal-body > .nav-tabs {
+    border-bottom: 2px solid #aeaeae !important;
+}
+
+/* Scoreboard */
+#score-graph canvas {
+    background-color: #989898c7 !important;
+    border-radius: 3px !important;
+    border-top: 1px solid #57d188 !important;
+    border-bottom: 1px solid #57d188 !important;
+}
+
+

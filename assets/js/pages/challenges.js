@@ -337,6 +337,8 @@ function loadChals() {
 
       const chalheader = $("<p>{0}</p>".format(chalinfo.name));
       const chalscore = $("<span>{0}</span>".format(chalinfo.value));
+      // const chaldifficulty = $("<span class=\"scp-difficulty-marker\"></span>");
+      const chaldifficulty = $('<span class="scp-difficulty-marker"></span>');
       for (let j = 0; j < chalinfo.tags.length; j++) {
         const tag = "tag-" + chalinfo.tags[j].value.replace(/ /g, "-");
         chalwrap.addClass(tag);
@@ -344,6 +346,7 @@ function loadChals() {
 
       chalbutton.append(chalheader);
       chalbutton.append(chalscore);
+      chalbutton.append(chaldifficulty);
       chalwrap.append(chalbutton);
 
       $("#" + catid + "-row")
