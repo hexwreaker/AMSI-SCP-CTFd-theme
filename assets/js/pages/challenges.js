@@ -276,6 +276,15 @@ function getSolves(id) {
   });
 }
 
+// SORT CHALLS FUNCTION
+function sort_challs(challenges) {
+
+  console.log(challenges);
+
+
+
+}
+
 function loadChals() {
   return CTFd.api.get_challenge_list().then(function(response) {
     const categories = [];
@@ -285,6 +294,9 @@ function loadChals() {
     if (window.BETA_sortChallenges) {
       challenges = window.BETA_sortChallenges(challenges);
     }
+
+    // SORT CHALLS
+    challenges = sort_challs(challenges);
 
     $challenges_board.empty();
 

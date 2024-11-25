@@ -132,6 +132,14 @@ select.form-control {
     max-width:100%
 }
 
+.challenge-hints {
+    padding: 1rem 0px 1rem 0px !important;
+}
+
+.challenge-files {
+    padding: 1rem 0px 1rem 0px !important;
+}
+
 .navbar {
     position:fixed !important;
     font-size: large !important;
