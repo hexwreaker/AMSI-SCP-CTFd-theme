@@ -211,6 +211,7 @@ select.form-control {
 
 .challenges-row {
     vertical-align: top;
+    margin-top: 10px !important; 
 }
 
 #challenges-board > div {
