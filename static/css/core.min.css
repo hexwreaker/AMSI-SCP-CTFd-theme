@@ -213,6 +213,10 @@ select.form-control {
     vertical-align: top;
 }
 
+.challenges-board > div {
+    margin-bottom: 20px;
+}
+
 .d-inline-block {
     /* border-left: 5px solid #85cfb1 !important;
     border-right: 5px solid #68a28b !important;

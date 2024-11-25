@@ -300,6 +300,8 @@ function loadChals() {
 
     $challenges_board.empty();
 
+    
+
     for (let i = challenges.length - 1; i >= 0; i--) {
       if ($.inArray(challenges[i].category, categories) == -1) {
         const category = challenges[i].category;
