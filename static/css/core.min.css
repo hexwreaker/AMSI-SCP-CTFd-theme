@@ -213,7 +213,7 @@ select.form-control {
     vertical-align: top;
 }
 
-.challenges-board > div {
+#challenges-board > div {
     margin-bottom: 20px;
 }
 
